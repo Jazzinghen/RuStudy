@@ -9,7 +9,7 @@ impl ggez::event::EventHandler for State {
         self.delta_time = ggez::timer::delta(ctx);
         Ok(())
     }
-    fn draw(&mut self, ctx: &mut Context) -> GameResult<()> {
+    fn draw(&mut self, _ctx: &mut Context) -> GameResult<()> {
         println!(
             "Hello ggez! Delta time = {}ns",
             self.delta_time.subsec_nanos()
